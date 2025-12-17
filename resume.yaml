@@ -1,0 +1,96 @@
+meta:
+  theme: professional
+  lastModified: "2025-04-04T06:59:24.305Z"
+basics:
+  name: Stellan Muller-Cohn
+  label: Software Developer
+  image: https://images.pexels.com/photos/50577/hedgehog-animal-baby-cute-50577.jpeg?cs=srgb&dl=pexels-pixabay-50577.jpg&fm=jpg
+  summary: >
+    Software Engineer experienced in building full-stack applications, backend services, and the automation 
+    infrastructure that supports them. Combines a strong product delivery focus with the systems-thinking 
+    and reliability mindset gained from developing internal platforms and tooling.
+  website: https://stellanmc.com
+  email: stellan125@gmail.com
+  location:
+    city: San Diego
+    countryCode: US
+    region: CA
+  profiles:
+    - username: Stellan Muller-Cohn
+      url: https://www.linkedin.com/in/stellan-muller-cohn-675247202/
+      network: linkedin
+    - username: Ykrej
+      url: https://github.com/Ykrej
+      network: github
+work:
+  - name: Illumina
+    position: Senior Software Engineer in Test
+    url: https://www.illumina.com/
+    startDate: "2022-09-01"
+    summary: >
+      Software engineer focused on building backend test infrastructure for continuous integration of 
+      on-instrument software. Promoted to Senior Software Engineer in Test in 2024.
+    highlights:
+      - Implemented and maintained automation for formal verification and continuous testing of on-instrument software using Python and C#
+      - Designed and implemented replacement for manual test agent configuration management process with automated Ansible-based solution
+      - Developed authentication and data management features for an internal web-based data visualization service using the Dash(Python) fullstack framework
+      - Managed deployments of an internal web-based data visualization service and the required reverse-proxy and cache services
+  - name: Mobile Xpress Clinics
+    position: Software Engineer - Contract
+    url: https://www.mobilexpressclinics.com/
+    startDate: "2022-06-01"
+    endDate: "2022-09-01"
+    summary: >
+      Contract software engineer responsible for delivering customer and employee facing web and mobile features in support of COVID testing operations.
+    highlights:
+      - Designed and implemented reporting of covid testing site demographic data using Google Firebase and ReactJS with Typescript
+      - Added functionality for employee covid testing intake iOS application using Swift
+      - Setup integration tests utilizing production-like front and backend deployments
+  - name: HP
+    position: Python Test Engineer
+    url: https://www.hp.com/
+    startDate: "2021-05-01"
+    endDate: "2022-09-01"
+    summary: >
+      Software engineer focused on building and maintaining Python-based automation systems and 
+      internal tooling to support quality and release confidence for a large-scale consumer mobile application.
+    highlights:
+      - Maintained and implemented test automation and framework features for testing of a large-scale consumer mobile-application on both Android and iOS
+      - Built and internal data processing tool to collate nightly test results into formatted reports for QA team
+  - name: Dexcom
+    position: Automation Engineer
+    url: https://www.dexcom.com/
+    startDate: "2020-01-01"
+    endDate: "2021-05-01"
+    summary: >
+      Automation engineer supporting internal IT and identity systems by building and maintaining tooling for employee
+      lifecycle management, authentication, and platform migrations.
+    highlights:
+      - Designed and maintained system for managing employee lifecycle using ServiceNow
+      - Automated migration of employee accounts from legacy to new systems
+      - Stood up and maintained Okta instance
+      - Assisted team with one-off powershell scripts
+skills:
+  - name: Languages & Frameworks
+    keywords:
+      - Python
+      - TypeScript
+      - Go
+      - C#
+      - React
+      - Svelte
+      - FastAPI
+  - name: Systems & Infrastructure
+    keywords:
+      - Docker
+      - Linux
+      - CI/CD pipelines
+      - GitHub Actions
+      - Ansible
+      - Bash
+      - AWS
+  - name: Platforms & Tools
+    keywords:
+      - Google Firebase
+      - Okta
+      - ServiceNow
