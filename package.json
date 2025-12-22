@@ -15,12 +15,13 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "validate": "npx resume validate --resume resume.yaml",
-    "build:html": "mkdir -p build && npx resume export --resume resume.yaml build/resume.html",
-    "build:pdf": "mkdir -p build && npx resume export --resume resume.yaml build/resume.pdf",
+    "validate": "npx resume validate --resume resume.json",
+    "build:html": "mkdir -p build && npx resume export --resume resume.json build/resume.html",
+    "build:pdf": "mkdir -p build && npx resume export --resume resume.json build/resume.pdf",
     "build": "npm run build:pdf && npm run build:html"
   },
   "dependencies": {
+    "jsonresume-theme-elegant": "^1.16.1",
     "resume-cli": "^3.0.8"
   }
 }
