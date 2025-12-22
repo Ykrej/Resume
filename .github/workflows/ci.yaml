@@ -38,10 +38,10 @@ jobs:
           if-no-files-found: error
           retention-days: 3
           compression-level: 0
-      - name: Upload resume.html artifact
+      - name: Upload github-pages artifact
         uses: actions/upload-artifact@v6
         with:
-          name: resume.html
+          name: github-pages
           path: build/resume.html
           if-no-files-found: error
           retention-days: 3
@@ -54,12 +54,9 @@ jobs:
       pages: write
       id-token: write
     environment:
-      name: resume.html
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/download-artifact@v5
-        with:
-          name: resume.html
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
