@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "theme": "elegant"
+  },
+  "basics": {
+    "name": "Stellan Muller-Cohn",
+    "label": "Software Developer",
+    "image": "https://images.pexels.com/photos/50577/hedgehog-animal-baby-cute-50577.jpeg",
+    "summary": "Highly motivated self-starter with 5+ years of experience on test automation and internal full stack web services. Interested in customer-focused full stak, backend and DevOps roles.",
+    "website": "https://stellanmc.com",
+    "email": "stellan125@gmail.com",
+    "location": {
+      "city": "San Diego",
+      "countryCode": "US",
+      "region": "CA"
+    },
+    "profiles": [
+      {
+        "username": "Stellan Muller-Cohn",
+        "url": "https://www.linkedin.com/in/stellan-muller-cohn-675247202/",
+        "network": "linkedin"
+      },
+      {
+        "username": "Ykrej",
+        "url": "https://github.com/Ykrej",
+        "network": "github"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Illumina",
+      "position": "Senior Software Engineer in Test",
+      "url": "https://www.illumina.com/",
+      "startDate": "2022-09-01",
+      "summary": "Software engineer focused on building backend test infrastructure for continuous integration of  on-instrument software. Promoted to Senior Software Engineer in Test in 2024.\n",
+      "highlights": [
+        "Implemented and maintained automation for formal verification and continuous testing of on-instrument software using Python and C#",
+        "Designed and implemented replacement for manual test agent configuration management process with automated Ansible-based solution",
+        "Developed authentication and data management features for an internal web-based data visualization service using the Dash(Python) fullstack framework",
+        "Managed deployments of an internal web-based data visualization service and the required reverse-proxy and cache services"
+      ]
+    },
+    {
+      "name": "Mobile Xpress Clinics",
+      "position": "Software Engineer - Contract",
+      "url": "https://www.mobilexpressclinics.com/",
+      "startDate": "2022-06-01",
+      "endDate": "2022-09-01",
+      "summary": "Contract software engineer responsible for delivering customer and employee facing web and mobile features in support of COVID testing operations.\n",
+      "highlights": [
+        "Designed and implemented reporting of covid testing site demographic data using Google Firebase and ReactJS with Typescript",
+        "Added functionality for employee covid testing intake iOS application using Swift",
+        "Setup integration tests utilizing production-like front and backend deployments"
+      ]
+    },
+    {
+      "name": "HP",
+      "position": "Python Test Engineer",
+      "url": "https://www.hp.com/",
+      "startDate": "2021-05-01",
+      "endDate": "2022-09-01",
+      "summary": "Software engineer focused on building and maintaining Python-based automation systems and  internal tooling to support quality and release confidence for a large-scale consumer mobile application.\n",
+      "highlights": [
+        "Maintained and implemented test automation and framework features for testing of a large-scale consumer mobile-application on both Android and iOS",
+        "Built and internal data processing tool to collate nightly test results into formatted reports for QA team"
+      ]
+    },
+    {
+      "name": "Dexcom",
+      "position": "Automation Engineer",
+      "url": "https://www.dexcom.com/",
+      "startDate": "2020-01-01",
+      "endDate": "2021-05-01",
+      "summary": "Automation engineer supporting internal IT and identity systems by building and maintaining tooling for employee lifecycle management, authentication, and platform migrations.\n",
+      "highlights": [
+        "Designed and maintained system for managing employee lifecycle using ServiceNow",
+        "Automated migration of employee accounts from legacy to new systems",
+        "Stood up and maintained Okta instance",
+        "Assisted team with one-off powershell scripts"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages & Frameworks",
+      "keywords": [
+        "Python",
+        "TypeScript",
+        "Go",
+        "C#",
+        "React",
+        "Svelte",
+        "FastAPI"
+      ]
+    },
+    {
+      "name": "Systems & Infrastructure",
+      "keywords": [
+        "Docker",
+        "Linux",
+        "CI/CD pipelines",
+        "GitHub Actions",
+        "Ansible",
+        "Bash",
+        "AWS"
+      ]
+    },
+    {
+      "name": "Platforms & Tools",
+      "keywords": [
+        "Google Firebase",
+        "Okta",
+        "ServiceNow"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "RPiPWMFanControl",
+      "description": "A temperature based fan control daemon for raspberry pi using hardware PWM for efficiency.",
+      "url": "https://github.com/Ykrej/RPiPWMFanControl",
+      "highlights": [
+        "Implemented hardware based pwm fan speed control with temperature-based control system",
+        "Designed and implemented git-tag-based build and deployment system for go binaries using GitHub Actions",
+        "Created cli interface for configuration of service using go flags"
+      ]
+    },
+    {
+      "name": "ServerPartDealsTable",
+      "description": "A web app that displays storage media from serverpartdeals.com in an easily sortable and filterable view.",
+      "url": "https://ykrej.github.io/ServerPartDealsTable",
+      "highlights": [
+        "Reverse engineered and implemented a client for serverpartdeals.com's product data api",
+        "Created searchable table view of serverpartdeals.com's product data using svelte",
+        "Setup automated deployment of application to Github pages using Github Actions"
+      ]
+    }
+  ],
+  "interests": [
+    {"name": "Guitar"},
+    {"name": "Surfing"},
+    {"name": "Programming"},
+    {"name": "Animals"}
+  ]
+}
