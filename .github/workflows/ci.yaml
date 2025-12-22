@@ -49,7 +49,7 @@ jobs:
   publish-resume-html:
     runs-on: ubuntu-latest
     # if: github.ref == 'refs/heads/main'  # Disabled for debug
-    needs: check-resume
+    needs: build-resume
     permissions:  # Github pages permissions
       pages: write
       id-token: write
@@ -66,7 +66,7 @@ jobs:
   publish-resume-gist:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
-    needs: check-resume
+    needs: build-resume
     steps:
       - uses: actions/download-artifact@v5
         with:
