@@ -44,7 +44,7 @@ jobs:
           path: build/
   publish-resume-html:
     runs-on: ubuntu-latest
-    # if: github.ref == 'refs/heads/main'  # Disabled for debug
+    if: github.ref == 'refs/heads/main'
     needs: build-resume
     permissions:  # Github pages permissions
       pages: write
@@ -58,7 +58,7 @@ jobs:
         uses: actions/deploy-pages@v4
   publish-resume-gist:
     runs-on: ubuntu-latest
-    # if: github.ref == 'refs/heads/main'  # Disabled for debug
+    if: github.ref == 'refs/heads/main'
     needs: build-resume
     steps:
       - uses: actions/download-artifact@v5
