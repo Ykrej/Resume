@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: github-pages
-          path: build/resume.html
+          path: build/
           if-no-files-found: error
           retention-days: 3
           compression-level: 0
@@ -51,7 +51,6 @@ jobs:
     # if: github.ref == 'refs/heads/main'  # Disabled for debug
     needs: build-resume
     permissions:  # Github pages permissions
-      contents: read
       pages: write
       id-token: write
     environment:

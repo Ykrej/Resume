@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "validate": "npx resume validate --resume resume.json",
-    "build:html": "mkdir -p build && npx resume export --resume resume.json build/resume.html",
+    "build:html": "mkdir -p build && npx resume export --resume resume.json build/index.html",
     "build:pdf": "mkdir -p build && npx resume export --resume resume.json build/resume.pdf",
     "build": "npm run build:pdf && npm run build:html"
   },
