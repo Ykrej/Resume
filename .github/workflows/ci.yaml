@@ -54,7 +54,7 @@ jobs:
       pages: write
       id-token: write
     environment:
-      name: github-pages
+      name: resume.html
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/download-artifact@v5
