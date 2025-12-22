@@ -1,0 +1,27 @@
+{
+  "name": "resume",
+  "version": "0.0.0",
+  "description": "My resume using JSONResume",
+  "homepage": "https://github.com/Ykrej/Resume#readme",
+  "bugs": {
+    "url": "https://github.com/Ykrej/Resume/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ykrej/Resume.git"
+  },
+  "license": "ISC",
+  "author": "Ykrej <stellan125@gmail.com>",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "validate": "npx resume validate --resume resume.json",
+    "build:html": "mkdir -p build && npx resume export --resume resume.json build/index.html",
+    "build:pdf": "mkdir -p build && npx resume export --resume resume.json build/resume.pdf",
+    "build": "npm run build:pdf && npm run build:html"
+  },
+  "dependencies": {
+    "jsonresume-theme-elegant": "^1.16.1",
+    "resume-cli": "^3.0.8"
+  }
+}

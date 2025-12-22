@@ -1,0 +1,72 @@
+name: Publish resume
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+
+env:
+  RESUME_GIST_ID: 00f972208f6e27029fb1d0d9c04011fc
+
+jobs:
+  build-resume:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Validate resume
+        run: pnpm run validate
+      - name: Build resume html
+        run: pnpm run build:html
+      - name: Upload resume.json artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: resume.json
+          path: resume.json
+          if-no-files-found: error
+          retention-days: 3
+          compression-level: 0
+      - name: Upload github-pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/
+  publish-resume-html:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    needs: build-resume
+    permissions:  # Github pages permissions
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+  publish-resume-gist:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    needs: build-resume
+    steps:
+      - uses: actions/download-artifact@v5
+        with:
+          name: resume.json
+      - name: Update Resume Gist
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_WRITE_TOKEN }}
+          gist_id: ${{ env.RESUME_GIST_ID }}
+          file_path: resume.json
