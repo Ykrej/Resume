@@ -58,7 +58,7 @@ jobs:
         uses: actions/deploy-pages@v4
   publish-resume-gist:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'  # Disabled for debug
     needs: build-resume
     steps:
       - uses: actions/download-artifact@v5
@@ -67,6 +67,6 @@ jobs:
       - name: Update Resume Gist
         uses: exuanbo/actions-deploy-gist@v1
         with:
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.GIST_WRITE_TOKEN }}
           gist_id: ${{ env.RESUME_GIST_ID }}
           file_path: resume.json
