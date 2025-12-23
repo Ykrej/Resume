@@ -21,7 +21,7 @@
     "build:pdf": "mkdir -p build && npx resume export --resume resume.json build/resume.pdf"
   },
   "dependencies": {
-    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-even": "^0.26.1",
     "resume-cli": "^3.0.8"
   }
 }

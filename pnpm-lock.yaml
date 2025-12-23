@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      jsonresume-theme-elegant:
-        specifier: ^1.16.1
-        version: 1.16.1
+      jsonresume-theme-even:
+        specifier: ^0.26.1
+        version: 0.26.1
       resume-cli:
         specifier: ^3.0.8
         version: 3.1.2
@@ -44,6 +44,10 @@ packages:
   '@jest/types@24.9.0':
     resolution: {integrity: sha512-XKK7ze1apu5JWQ5eZjHITP66AX+QsLlbaJRBGYr8pNzwcAE2JVkwnf0yqjHTsDRcjR0mujy/NmZMXw5kl+kGBw==}
     engines: {node: '>= 6'}
+
+  '@rbardini/html@1.0.1':
+    resolution: {integrity: sha512-sVnvDG2ujW5R0mfubZDCnxnxHSsM1kS4ExY+Z3j7XQkY4Y7RKnM4tPi6E8OkkUmbD3NUeVWV2ObSmgaaZUHIDw==}
+    engines: {node: '>=20'}
 
   '@socket.io/component-emitter@3.1.2':
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
@@ -331,6 +335,9 @@ packages:
     resolution: {integrity: sha512-qOhPa/Fj7s6TY8H8esGu5QNpMMQxz79h+urzrNYN6mn+9BnxlDGf5QZ+XeCDsxSjPqsSR56XOZOJmpeurnLMeg==}
     engines: {node: '>=0.10.0'}
 
+  classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
+
   clean-css@4.2.4:
     resolution: {integrity: sha512-EJUDT7nDVFDvaQgAo2G/PJvxmp1o/c6iXLbswsBbUFXi1Nr+AjA2cKmfbKDMjMvzEe75g3P6JkaDDAKk96A85A==}
     engines: {node: '>= 4.0'}
@@ -411,6 +418,9 @@ packages:
   core-js@2.6.12:
     resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
     deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+
+  core-js@3.47.0:
+    resolution: {integrity: sha512-c3Q2VVkGAUyupsjRnaNX6u8Dq2vAdzm9iuPj5FW0fRxzlxgq9Q39MDq10IvmQSpLgHQNyQzQmOo6bgGHmH3NNg==}
 
   cors@2.8.5:
     resolution: {integrity: sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==}
@@ -655,6 +665,9 @@ packages:
 
   fd-slicer@1.1.0:
     resolution: {integrity: sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==}
+
+  feather-icons@4.29.2:
+    resolution: {integrity: sha512-0TaCFTnBTVCz6U+baY2UJNKne5ifGh7sMG4ZC2LoBWCZdIyPa+y6UiR4lEYGws1JOFWdee8KAsAIvu0VcXqiqA==}
 
   file-exists@5.0.1:
     resolution: {integrity: sha512-TeBMgeKbdSsQtcY2XqKY/yTa4BciMD/Gw8YcND0XMDZt4CDj87l1Wl4x7K0ravZ80tZcyIGMD0hj2VSRPR8M8Q==}
@@ -1003,6 +1016,10 @@ packages:
 
   jsonresume-theme-elegant@1.16.1:
     resolution: {integrity: sha512-UHKZx+AoE/zGnsZBgV60b+kP5s7euzLp1wDfOItWCt90iwzXuiY++BETTsaRlQHt4nrKbb5GvjXHkE02xovS1w==}
+
+  jsonresume-theme-even@0.26.1:
+    resolution: {integrity: sha512-m7KVaPosBP+pZfsM+6UdShhfiB3YgJtVfhFZ2k3fzvA6jayVhrDbXKsRBhYAKCkHoPrq+zwLazz4drYaw06l0w==}
+    hasBin: true
 
   jsonresume-theme-even@0.6.1:
     resolution: {integrity: sha512-QLN3Hh8e7v9ZK3xAcvcOoePDpgWjU5xwzrzLxPEdJZ0JS3Nc5A/KRbUAkcPvNbUvZuCXwHgN8zfETVItQVTDRQ==}
@@ -1942,6 +1959,8 @@ snapshots:
       '@types/istanbul-reports': 1.1.2
       '@types/yargs': 13.0.12
 
+  '@rbardini/html@1.0.1': {}
+
   '@socket.io/component-emitter@3.1.2': {}
 
   '@types/babel-types@7.0.16': {}
@@ -2285,6 +2304,8 @@ snapshots:
       isobject: 3.0.1
       static-extend: 0.1.2
 
+  classnames@2.5.1: {}
+
   clean-css@4.2.4:
     dependencies:
       source-map: 0.6.1
@@ -2370,6 +2391,8 @@ snapshots:
   copy-descriptor@0.1.1: {}
 
   core-js@2.6.12: {}
+
+  core-js@3.47.0: {}
 
   cors@2.8.5:
     dependencies:
@@ -2607,6 +2630,11 @@ snapshots:
   fd-slicer@1.1.0:
     dependencies:
       pend: 1.2.0
+
+  feather-icons@4.29.2:
+    dependencies:
+      classnames: 2.5.1
+      core-js: 3.47.0
 
   file-exists@5.0.1: {}
 
@@ -2992,6 +3020,15 @@ snapshots:
       sshpk: 1.18.0
       tarball-extract: 0.0.3
       underscore: 1.13.7
+
+  jsonresume-theme-even@0.26.1:
+    dependencies:
+      '@rbardini/html': 1.0.1
+      feather-icons: 4.29.2
+      micromark: 2.11.4
+      striptags: 3.2.0
+    transitivePeerDependencies:
+      - supports-color
 
   jsonresume-theme-even@0.6.1:
     dependencies:
