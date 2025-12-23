@@ -28,7 +28,7 @@ jobs:
         run: pnpm install
       - name: Validate resume
         run: pnpm run validate
-      - name: Build resume html
+      - name: Build site
         run: pnpm run build:site
       - name: Upload resume.json artifact
         uses: actions/upload-artifact@v6
