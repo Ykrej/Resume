@@ -17,10 +17,11 @@
   "scripts": {
     "validate": "npx resumed validate --resume resume.json",
     "build:site": "node build-site.js",
-    "build:pdf": "mkdir -p build && npx resumed export resume.json --theme jsonresume-theme-even -o build/resume.pdf"
+    "build:pdf": "node build-pdf.js"
   },
   "dependencies": {
     "jsonresume-theme-even": "^0.26.1",
+    "puppeteer": "^24.34.0",
     "resumed": "^6.1.0"
   }
 }
