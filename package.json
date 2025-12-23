@@ -16,8 +16,7 @@
   "main": "index.js",
   "scripts": {
     "validate": "npx resumed validate --resume resume.json",
-    "build:site": "mkdir -p build/site && npx resumed render resume.json --theme jsonresume-theme-even -o build/site/index.html && cp -r static/ build/site/",
-    "build:html": "mkdir -p build && npx resumed render resume.json --theme jsonresume-theme-even -o build/resume.html",
+    "build:site": "node build-site.js",
     "build:pdf": "mkdir -p build && npx resumed export resume.json --theme jsonresume-theme-even -o build/resume.pdf"
   },
   "dependencies": {
