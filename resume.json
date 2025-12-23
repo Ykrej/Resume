@@ -32,7 +32,7 @@
       "position": "Senior Software Engineer in Test",
       "url": "https://www.illumina.com/",
       "startDate": "2022-09-01",
-      "summary": "Software engineer focused on building Backend test infrastructure for continuous integration of  on-instrument software. Promoted to Senior Software Engineer in Test in 2024.\n",
+      "summary": "Software engineer focused on building Backend test infrastructure for continuous integration of  on-instrument software. Promoted to Senior Software Engineer in 2024.\n",
       "highlights": [
         "Implemented and maintained automation for formal verification and continuous testing of on-instrument software using Python and C#",
         "Designed and implemented replacement for manual test agent configuration management process with automated Ansible-based solution",
@@ -132,7 +132,7 @@
       "url": "https://ykrej.github.io/ServerPartDealsTable",
       "highlights": [
         "Reverse engineered and implemented a client for serverpartdeals.com's product data api",
-        "Created searchable table view of serverpartdeals.com's product data using svelte",
+        "Created searchable table view of serverpartdeals.com's product data using Svelte",
         "Setup automated deployment of application to Github pages using Github Actions"
       ]
     }
