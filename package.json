@@ -16,9 +16,9 @@
   "main": "index.js",
   "scripts": {
     "validate": "npx resume validate --resume resume.json",
-    "build:html": "mkdir -p build && npx resume export --resume resume.json build/index.html",
-    "build:pdf": "mkdir -p build && npx resume export --resume resume.json build/resume.pdf",
-    "build": "npm run build:pdf && npm run build:html"
+    "build:site": "mkdir -p build/site && npx resume export --resume resume.json build/site/index.html && cp -r static/ build/site/",
+    "build:html": "mkdir -p build && npx resume export --resume resume.json build/resume.html",
+    "build:pdf": "mkdir -p build && npx resume export --resume resume.json build/resume.pdf"
   },
   "dependencies": {
     "jsonresume-theme-elegant": "^1.16.1",
